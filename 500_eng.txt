@@ -1,0 +1,70 @@
+Certainly! Here's the translation of the given text:
+
+**Task 4. Five Hundred**
+In a small shop selling various items, the price of each item is 500 HUF. During a single purchase, if someone buys multiple units of the same item, the price decreases: the second unit costs 450 HUF, the third 400 HUF, and subsequent units also cost 400 HUF each. Therefore, the price doesn't decrease further after purchasing the third unit of the same item.
+
+Customers can have a minimum of 1 and a maximum of 20 items in their shopping baskets when they go to the checkout. The contents of the baskets are described in the "penztar.txt" file, where each line represents either the name of an item or the character 'F'. The file can contain up to 1000 lines. The 'F' character indicates that the customer has no more items in their basket, and payment is due. The item names are without accents, can consist of multiple words, and have a maximum length of 30 characters.
+
+Example of the first few lines of the "penztar.txt" file:
+- pen (ballpoint pen)
+- F
+- notebook
+- HB pencil
+- HB pencil
+- notebook
+- pen
+- bag
+- wrench
+- box
+- F
+
+Based on the example, the first customer bought a total of 1 pen, so they need to pay 500 HUF. In the second purchase, six different items were bought—more than one of the HB pencil and notebook—resulting in a total value of 3900 HUF.
+
+Create a program that uses the data from the "penztar.txt" file to answer the following questions. Save the program's source code as "otszaz." (When writing the program, you don't need to check the correctness or validity of user-provided data; you can assume that the available data conforms to the description.)
+
+Before displaying the results for tasks that require screen output, include the task number on the screen (e.g., "Task 3:"). When requesting input from the user, indicate the expected input.
+
+**Tasks:**
+
+1. Read and store the contents of the "penztar.txt" file.
+2. Determine how many times payments were made at the checkout.
+3. Display on the screen the number of items in the basket of the first customer.
+4. Prompt the user for a purchase order number, an item name, and a quantity. Use these inputs for the following three tasks. You can assume that the user will provide a purchase order number and item name that match the data in the input file.
+5. Determine, for the requested item:
+   a. In which purchase it was first bought and last bought.
+   b. How many times it was purchased in total.
+   
+6. Calculate the total amount to be paid for purchasing the requested quantity of an item. To solve this, create a function called "ertek" that calculates the amount based on the quantity.
+7. Determine which items and in what quantities were purchased for the requested purchase. You can display the names of the items in any order.
+8. Create the "osszeg.txt" file, where each line should contain the amount to be paid for each purchase, following the provided output format.
+
+Sample Output Format (in English) has been provided earlier.
+
+Task
+The first shopper bought 1 item.
+Task
+Enter the order number of a purchase: 2
+Enter the name of a product: brush
+Enter the quantity purchased: 2
+Task
+Order number of the first purchase: 5
+Order number of the last purchase: 139
+It was purchased 32 times.
+Task
+When purchasing 2 items, the total amount to be paid is: 950
+Task
+1 brush
+1 bag
+1 box
+1 wrench
+2 marker
+2 HB pencil
+Partial content from the "osszeg.txt" file:
+1: 500
+2: 3900
+3: 2300
+4: 1000
+5: 2500
+6: 2900
+7: 95
+These tasks involve reading and processing a shopping list file, calculating totals, and generating output based on the provided data.
