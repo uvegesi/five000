@@ -1,3 +1,5 @@
+#1
+
 file_f = open('penztar.txt')
 
 shoppers_dict = {}
@@ -67,9 +69,17 @@ def sum_price_calc(list):
     return sum(sum_prices)
     
     
-print(f'The price for {shopping_list[2]} {shopping_list[1]} is {sum_price_calc(shopping_list[2])} HUF.')
+print(f'The price for {shopping_list[2]} {shopping_list[1]} is {price_calc_for_more(shopping_list[2])} HUF.')
 
-#
+# 7
+
+def items_per_shopping(shopping_num):
+    return { item: shoppers_dict[shopping_num].count(item) for item in shoppers_dict[shopping_num] }
+
+for k, v in items_per_shopping(shopping_list[0]).items():
+    print(v, k)
+
+# 8
 
 def sum_prices_file():
     sums_file = open('osszeg.txt', 'w')
